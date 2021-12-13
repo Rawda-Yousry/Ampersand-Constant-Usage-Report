@@ -1,3 +1,4 @@
+
 <u><h2 style="color:lightblue;">Const Usage in Code:</h2></u></br>
 
 <b><p style="color:lightgreen;"> Constant Variables:</p></b>
@@ -129,7 +130,7 @@ when implementing a static array, the size of the array must be constant.so, we 
  using namespace std;
  const int a=5;
 
- int main()
+ void main()
  {
     int arr[a]={1,2,3,4,5};
     for(int i = 0 ;i < a ; i++)
@@ -160,7 +161,7 @@ public:
   }
 };
 
- int main()
+ void main()
  {
     const Test t(10);
     cout<<t.a<<endl;
@@ -183,7 +184,7 @@ If you use & in the left-hand side of a variable declaration, it means that you 
  #include<iostream>
  using namespace std;
 
-int main()
+void main()
 {
     int x=10;
     int &y= x;
@@ -202,7 +203,7 @@ When using it on the right-hand side of a variable, it's also known as the "addr
  #include<iostream>
  using namespace std;
 
-int main()
+void main()
 {
     int*y;
     int x;
@@ -216,6 +217,8 @@ int main()
 <b><p style="color:lightgreen;"> & as a bitwise operator:</p></b>
 It is the bitwise AND. an infix operator taking two numbers as inputs and doing an AND on each of the bit pairs of the inputs. Here is an example. 14 is represented as 1110 as a binary number and 42 can be written as 101010. So 1110 (14) will be zero filed from the left and then the operation goes like this.
 
+
+![bitwise &](bitwise&.png)
 </br></br>
 
 <b><p style="color:lightgreen;">&& in logical expression:</p></b>
@@ -232,7 +235,7 @@ It is just a style of writing and operation in code.
  #include<iostream>
  using namespace std;
 
-int main()
+void main()
 {
   int a = 42;
   int b = 43;
@@ -260,7 +263,7 @@ The following example uses the &= operator to concatenate two String variables a
  #include<string>
  using namespace std;
 
-int main()
+void main()
 {
     string var1  = "Hello "
     string var2 = "World!"
