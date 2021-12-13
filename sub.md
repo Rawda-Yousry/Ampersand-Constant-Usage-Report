@@ -192,7 +192,7 @@ int main()
 
 }
 ```
-This doesn't just mean that both x and y will have the same value, but they will actually point to the same place in the memory.</br></br>
+This doesn't just mean that both x and y will have the same value, but they will actually point to the same place in the memory.
 
 ##& to get the address of a variable:
 
@@ -218,6 +218,8 @@ int main()
 
 It is the bitwise AND. an infix operator taking two numbers as inputs and doing an AND on each of the bit pairs of the inputs. Here is an example. 14 is represented as 1110 as a binary number and 42 can be written as 101010. So 1110 (14) will be zero filed from the left and then the operation goes like this.
 
+
+![bitwise&](https://drive.google.com/uc?export=view&id=12GuSeo-p7duasOsZDeYbSdYw8jHBDBlU)
 
 
 ## && in logical expression:
