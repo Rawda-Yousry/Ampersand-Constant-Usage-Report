@@ -20,7 +20,7 @@ int main()
 ```
 if we tried the above code, compiling error will appear "you cannot assign to a variable that is const".
 
- ## Constant Pointers:
+## Constant Pointers:
 
 if we want a pointer variable always point to the same variable then we can make it constant. Moreover, once we declared the pointer as constant and intializing it, we cannot change the pointer variable as shown below.
 
