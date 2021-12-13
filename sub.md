@@ -1,6 +1,6 @@
-<u><h2 style="color:lightblue;">Const Usage in Code:</h2></u></br>
+#Usage of Const
 
-<b><p style="color:lightgreen;"> Constant Variables:</p></b>
+## Constant Variables:
 
 When we declare a variable as const it must be initialized firstly then we cannot change its value later on as shown below.
 
@@ -18,9 +18,9 @@ int main()
 
 }
 ```
-if we tried the above code, compiling error will appear "you cannot assign to a variable that is const".</br></br>
+if we tried the above code, compiling error will appear "you cannot assign to a variable that is const".
 
-<b><p style="color:lightgreen;"> Constant Pointers:</p></b>
+ ## Constant Pointers:
 
 if we want a pointer variable always point to the same variable then we can make it constant. Moreover, once we declared the pointer as constant and intializing it, we cannot change the pointer variable as shown below.
 
@@ -43,9 +43,10 @@ if we want a pointer variable always point to the same variable then we can make
 
 }
 ```
-So, if we tried the above code an error will appear while compiling "you cannot assign to a variable that is const".</br></br>
+So, if we tried the above code an error will appear while compiling "you cannot assign to a variable that is const".
 
-<b><p style="color:lightgreen;"> Pointer To Constant Variables:</p></b>
+##Pointer To Constant Variables:
+
 A pointer to const means that we can access through pointer variable (the value itself of the variable can be changed but the reference cannot be changed) as shown in the code below.
 ```
 {
@@ -67,9 +68,9 @@ int main()
 }
 ```
 So, if we tried the above code a compiling error will appear "illegal, right operand has type ‘const int *"
-</br></br>
 
-<b><p style="color:lightgreen;">Constant Function Arguments:</p></b>
+
+## Constant Function Arguments:
 
 We can use the const keyword with the arguments of a function. If an argument is declared as const then the function will not be allowed to change its value. The same is explained in the following code.
 ```
@@ -90,9 +91,9 @@ int test(const int b)
 
 }
 ```
-So, if we tried the above code a compiling erroe will appear" you cannot assign to a variable that is const", as we cannot change the value of a as it declared as const.</br></br>
+So, if we tried the above code a compiling erroe will appear" you cannot assign to a variable that is const", as we cannot change the value of a as it declared as const.
 
-<b><p style="color:lightgreen;">Constant Data Members of a Class:</p></b>
+## Constant Data Members of a Class:
 
 The keyword ‘const’ can also be used with the data members of a class. If we define a const data member of a class then we must have to initialize that data member through the constructor of the class. The value of const data members cannot be changed through the object of the variable as shown in the code below.
 ```
@@ -117,9 +118,9 @@ int main()
 
 }
 ```
-in the above code ,the value of the constant data member is accessed by the object of the class but when we tried to change the value a compiling error appears.</br></br>
+in the above code ,the value of the constant data member is accessed by the object of the class but when we tried to change the value a compiling error appears.
 
-<b><p style="color:lightgreen;"> Constant in static array:</p></b>
+## Constant in static array:
 
 when implementing a static array, the size of the array must be constant.so, we can make it as the following 
 
@@ -129,7 +130,7 @@ when implementing a static array, the size of the array must be constant.so, we 
  using namespace std;
  const int a=5;
 
- void main()
+ int main()
  {
     int arr[a]={1,2,3,4,5};
     for(int i = 0 ;i < a ; i++)
@@ -141,7 +142,7 @@ when implementing a static array, the size of the array must be constant.so, we 
 }
 ```
 
-<b><p style="color:lightgreen;">Constant Objects of a Class:</p></b>
+## Constant Objects of a Class:
 
 when we declare an object of class as const then the values of data members cannot be changed later on. If we try to change the values of data members then compiler will generate an error as shown in the following code.
 
@@ -160,7 +161,7 @@ public:
   }
 };
 
- void main()
+ int main()
  {
     const Test t(10);
     cout<<t.a<<endl;
@@ -170,11 +171,11 @@ public:
 
 }
 ```
-Once we declared the object as const, we cannot change the values of its data members. And if we tried to do so a compiling error as in the above code.</br></br></br></br>
+Once we declared the object as const, we cannot change the values of its data members. And if we tried to do so a compiling error as in the above code.
 
-<u><h2 style="color:lightblue;">Ampersand Usage In Code:</h2></u>
+# Ampersand Usage In Code:
 
-<b><p style="color:lightgreen;">& to declare a reference to a type(local variables, class members, method parameters):</p></b>
+## to declare a reference to a type(local variables, class members, method parameters):
 
 If you use & in the left-hand side of a variable declaration, it means that you expect to have a reference to the declared type
 
@@ -183,7 +184,7 @@ If you use & in the left-hand side of a variable declaration, it means that you 
  #include<iostream>
  using namespace std;
 
-void main()
+int main()
 {
     int x=10;
     int &y= x;
@@ -193,7 +194,7 @@ void main()
 ```
 This doesn't just mean that both x and y will have the same value, but they will actually point to the same place in the memory.</br></br>
 
-<b><p style="color:lightgreen;">& to get the address of a variable:</p></b>
+##& to get the address of a variable:
 
 When using it on the right-hand side of a variable, it's also known as the "address-of operator",it'll return its address in the memory instead of the variable's value itself. It is useful for pointer declarations.
 
@@ -202,7 +203,7 @@ When using it on the right-hand side of a variable, it's also known as the "addr
  #include<iostream>
  using namespace std;
 
-void main()
+int main()
 {
     int*y;
     int x;
@@ -211,21 +212,20 @@ void main()
 
 }
 ```
-</br></br>
 
-<b><p style="color:lightgreen;"> & as a bitwise operator:</p></b>
+
+## & as a bitwise operator:
+
 It is the bitwise AND. an infix operator taking two numbers as inputs and doing an AND on each of the bit pairs of the inputs. Here is an example. 14 is represented as 1110 as a binary number and 42 can be written as 101010. So 1110 (14) will be zero filed from the left and then the operation goes like this.
 
 
-![bitwise &](bitwise&.png)
-</br></br>
 
-<b><p style="color:lightgreen;">&& in logical expression:</p></b>
+## && in logical expression:
 
 It is just a style of writing and operation in code.
-</br></br>
 
-<b><p style="color:lightgreen;">&& for declaring rvalue references:</p></b>
+
+##&& for declaring rvalue references:
 
  An lvalue is an expression e that may appear on the left or on the right hand side of an assignment, whereas an rvalue is an expression that can only appear on the right hand side of an assignment,For example:
 
@@ -234,7 +234,7 @@ It is just a style of writing and operation in code.
  #include<iostream>
  using namespace std;
 
-void main()
+int main()
 {
   int a = 42;
   int b = 43;
@@ -251,9 +251,9 @@ void main()
 }
 ```
 Although rvalues can only appear on the right-hand side, still one can capture references to them. Those "captures" are called rvalue references and such variables have to be declared with double ampersands (&&).
-</br></br>
 
-<b><p style="color:lightgreen;">&= operator:</p></b>
+
+## &= operator:
 
 The following example uses the &= operator to concatenate two String variables and assign the result to the first variable.
 ```
@@ -262,7 +262,7 @@ The following example uses the &= operator to concatenate two String variables a
  #include<string>
  using namespace std;
 
-void main()
+int main()
 {
     string var1  = "Hello "
     string var2 = "World!"
@@ -272,3 +272,20 @@ void main()
 
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
