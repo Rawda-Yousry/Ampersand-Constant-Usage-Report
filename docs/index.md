@@ -228,7 +228,7 @@ It is the bitwise AND. an infix operator taking two numbers as inputs and doing 
 It is just a style of writing and operation in code.
 
 
-##&& for declaring rvalue references:
+**&& for declaring rvalue references:**
 
  An lvalue is an expression e that may appear on the left or on the right hand side of an assignment, whereas an rvalue is an expression that can only appear on the right hand side of an assignment,For example:
 
